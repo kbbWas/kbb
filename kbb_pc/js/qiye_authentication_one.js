@@ -2,6 +2,7 @@ $(document).ready(function ($) {
 	//判断登陆
 	seesionLoad();
 
+	$('#g_tel').val(_tel);
 
 	$('#g_oneSubmit').click(function () {
 		shipperAttesation();
@@ -12,17 +13,18 @@ $(document).ready(function ($) {
 //验证
 function shipperAttesation() {
 	$.ajax({
-		type: "get",
 		url: kbb + "kbb-webs/personalCenter/shipperAttesation",
-		data:$('#enterpriseForm').serialize(),
-		async: true,
+		type: 'POST',
+		data:$("#enterpriseForm").serialize(),
+		async: false,
+		cache: false,
+		contentType: false,
+		processData: false,
 		success: function (data) {
-			console.log(data);
-			if (data.status == 200) {
-
-			} else {
-				alert(data.msg);
-			}
+			console.log(data)
+		},
+		error: function (data) {
+			alert(data);
 		}
 	});
 
