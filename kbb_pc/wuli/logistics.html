@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>矿宝宝物流-矿宝宝官网</title>
+	<link rel="shortcut icon" href="../bitbug_favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/jackson.css"/>
+	<link rel="stylesheet" href="../css/gm.css"/>
+	<script src="../js/swiper.min.js" type="text/javascript"></script>
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--头部个人-->
+<div class="mall_header">
+	<div class="con_mall">
+		<div class="left_hot clear">
+			<span class="pull-left">欢迎来到矿宝宝官网</span>
+			<div class="pull-left">
+				<a href="../html/sign_in.html">请登录</a>
+				<a href="../html/register.html">免费注册</a>
+			</div>
+			<div class="pull-left">
+				<span>你好，<i class="g_blue" id="g_userTel"></i></span>
+				<a href="javascript:;" id="signOut">退出</a>
+			</div>
+		</div>
+		<div class="left_right">
+			<a class="huiyuan_zhoangixn" href="../html/personal_enter.html">会员中心</a>|
+			<a href="../html/help_use.html">帮助中心</a>|
+			<a href="../html/about_us.html">关于我们</a>|
+			<a href=tencent://message/?uin=3118481379&Site=矿宝宝在线客服&Menu=yes>在线客服</a>
+		</div>
+	</div>
+</div>
+<!--nav-->
+<div class="big_main sc_danhang">
+	<!--loge-->
+	<div class="logo_head">
+		<div class="zuo_logo">
+			<a href="../index.html"></a>
+		</div>
+		<div class="nav_top">
+			<div class="nav_right">
+				<ul>
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="../shangcheng/spot_mall.html">现货商城</a></li>
+					<li><a href="../shangcheng/source_search.html">货源搜索</a></li>
+					<li><a style="color:#0058a9;" href="../wuli/logistics.html">矿宝宝物流</a></li>
+					<li><a href="../wuli/supply_chain_finance.html">供应链金融</a></li>
+					<li><a href="../wuli/news_information.html">行业资讯</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="g_nav_right pull-right">
+			<img src="../img/load/kf-dl.png" alt="">
+		</div>
+	</div>
+</div>
+<!--免费找车注册-->
+<div class="bay_call">
+	<div class="widr_op">
+		<div class="free_car">
+			<h5>免费帮您找车</h5>
+			<form action="" id="frmUserInfo">
+				<input id="tels_ojoj" type="hidden" name="telephone"/>
+				<div class="in_put_lin">
+					<label>
+						<span>运输货物</span>
+						<input class="" type="text" placeholder="请输入运输货物" name="productName"/>
+					</label>
+					<label>
+						<span>运输吨数</span>
+						<input class="" type="text" placeholder="请输入运输吨数" name="totalTons"/>
+					</label>
+					<label>
+						<span>开始时间</span>
+						<input style="color: #676363;" class="" type="date" placeholder="请输入开始时间" name="startTime"/>
+					</label>
+					<label>
+						<span>起运地</span>
+						<input class="shuru_huowu" type="text" placeholder="请输入起运地" name="startCity"/>
+					</label>
+					<label>
+						<span>到达地</span>
+						<input class="shuru_huowu" type="text" placeholder="请输入到达地" name="endCity"/>
+					</label>
+					<label>
+						<span>备注</span>
+						<input class="beizhu_liu" type="text" placeholder="请输入其他说明..." name="requireDescribe"/>
+					</label>
+					<button type="button" class="go_weitou" id="go_weitou">立即委托</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!--矿宝宝介绍-->
+<div class="introduce_kuang">
+	<div class="introduce_shoe">
+		<div class="jieshao_l">
+			<h5>矿宝宝介绍</h5>
+			<span>Kuang Baobao introduction</span>
+		</div>
+		<div class="introduce_main">
+			<div class="jies_kok">
+				<p>
+					矿宝宝为运需双方提供优质的物流服务，用户可根据自己的需求选择运输方式及货物类型、进行物流和运力的整合，矿宝宝通过货源、车辆、出货及运输线路等数据，为用户提供货物在整体物流运输过程中的数据追踪与分析业务，同时也为运需双方提供全方位的运输保障服务。</p>
+				<p>矿宝宝物流APP的主要功能包含：物流运输、矿物交易、委托找货、行业新闻、价格指数等。</p>
+			</div>
+			<div class="wuliu_peih yousi_shu">
+				<img src="../img/wuliu/pt-wl.png" alt=""/>
+				<h6>物流配货</h6>
+				<p>告别拉活难，海量货运信息
+					<br/>随时更新，无限抢！</p>
+			</div>
+			<div class="wuliu_peih">
+				<img src="../img/wuliu/pt-jy.png" alt=""/>
+				<h6>矿物交易</h6>
+				<p>选产品、看指标、比价格，
+					<br/>动动手指，轻松搞定！</p>
+			</div>
+			<div class="wuliu_peih">
+				<img src="../img/wuliu/pt-xw.png" alt=""/>
+				<h6>新闻资讯</h6>
+				<p>行业动态、价格趋势，随时
+					<br/>随地实时掌控！</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--丰富的物流资源-->
+<div class="wuliu_ziyuan">
+	<div class="jiji_ziyuan">
+		<div class="jieshao_l">
+			<h5>丰富的物流资源</h5>
+			<span>Rich logistics resources</span>
+		</div>
+		<div class="ziyuan_gaomeng">
+			<div class="ziyuan_kuang">
+				<p>矿宝宝物流模块，整合了全国范围内发布的矿业物流动态信息，海量真实货运信息随时更新，您可以随时抢单拉货。</p>
+				<p>矿宝宝提供预付运费功能，无需账期，让司机及时盈利。</p>
+				<div class="rupain_cjia">
+					<img src="../img/wuliu/pty-zs.png" alt=""/>
+					<img src="../img/wuliu/pty-hl.png" alt=""/>
+					<img src="../img/wuliu/pty-yf.png" alt=""/>
+				</div>
+			</div>
+			<div class="yikoko_koko">
+				<img src="../img/wuliu/jm-wl.png" alt=""/>
+			</div>
+		</div>
+	</div>
+</div>
+<!--矿物交易-->
+<div class="wuliu_ziyuan">
+	<div class="jiji_ziyuan">
+		<div class="jieshao_l">
+			<h5>矿物交易</h5>
+			<span>Mineral transaction</span>
+		</div>
+		<div class="ziyuan_gaomeng">
+			<div class="ziyuan_kuang jiaoyi_shuo">
+				<p>矿宝宝交易模块，在这里您可以浏览到全国范围内在售的矿产信息，轻松达成找矿、买矿目的，还可以定制个性化需求，由专人为您找矿。</p>
+			</div>
+			<div class="yikoko_koko jiouo_gomig">
+				<img src="../img/wuliu/jm-jy.png" alt=""/>
+			</div>
+		</div>
+	</div>
+</div>
+<!--矿业新闻资讯-->
+<div class="wuliu_ziyuan last_maom">
+	<div class="jiji_ziyuan">
+		<div class="jieshao_l">
+			<h5>矿业新闻资讯</h5>
+			<span>Mining news information</span>
+		</div>
+		<div class="ziyuan_gaomeng">
+			<div class="ziyuan_kuang zixun_ext">
+				<p>行业动态、价格趋势，随时随地实时掌控！</p>
+			</div>
+			<div class="yikoko_koko title_text">
+				<img src="../img/wuliu/jm-xw.png" alt=""/>
+			</div>
+		</div>
+	</div>
+</div>
+<!--二维码-->
+<div class="we_ma_duo"></div>
+<!-- 底部 -->
+<div class="g_foot jack_one">
+	<div class="g_foot_top">
+		<ul class="clear">
+			<li><img src="../img/shouye/ys-1.png" alt=""><span>我要买矿</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=0&titleid=0">现货商城采购流程</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=1">货源搜索</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=2">如何发布求购需求</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=3">如何支付</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=4">提货流程</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=5">售后服务</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=6">现货商城和货源搜索的区别</a></li>
+				</ol>
+			</li>
+			<li><img src="../img/shouye/ys-2.png" alt=""><span>我要卖矿</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=1&titleid=0">供应商需求发布</a></li>
+					<li><a href="../html/help_use.html?parentid=1&titleid=1">供应商合作洽谈</a></li>
+				</ol>
+			</li>
+			<li><img src="../img/shouye/ys-3.png" alt=""><span>我要拉货</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=2&titleid=0">如何免费找货</a></li>
+					<li><a href="../html/help_use.html?parentid=2&titleid=1">矿宝宝物流APP</a></li>
+					<li><a href="../html/help_use.html?parentid=2&titleid=2">车队合作洽谈</a></li>
+				</ol>
+			</li>
+			<li><img src="../img/shouye/ys-4.png" alt=""><span>我要找车</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=3&titleid=0">如何免费找车</a></li>
+					<li><a href="../html/help_use.html?parentid=3&titleid=1">如何查看物流订单</a></li>
+				</ol>
+			</li>
+			<li><img src="../img/shouye/ys-5.png" alt=""><span>供应链金融</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=4&titleid=0">什么是运输宝</a></li>
+					<li><a href="../html/help_use.html?parentid=4&titleid=1">什么是大宗白条</a></li>
+					<li><a href="../html/help_use.html?parentid=4&titleid=2">如何申请</a></li>
+				</ol>
+			</li>
+		</ul>
+	</div>
+	<div class="g_foot_ft">
+		<dl class="clear">
+			<dt><img src="../img/shouye/logo-di.png" alt=""></dt>
+			<dd>
+				<ul class="clear">
+					<li><a href="../html/about_us.html?num=0">关于我们</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=1">公司理念</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=2">人才招聘</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=3">联系我们</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=4">建议反馈</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/help_use.html">帮助中心</a></li>
+				</ul>
+				<p>&copy;矿宝宝 kuangbaobao.com 版权所有丨京ICP备16025447号</p>
+				<p>服务热线：400-667-1052（9:00-18:00）</p>
+			</dd>
+		</dl>
+	</div>
+</div>
+<script src="../js/kbb.js" type="text/javascript"></script>
+<script src="../js/gm.js" type="text/javascript"></script>
+</body>
+<script type="text/javascript">
+
+</script>
+</html>

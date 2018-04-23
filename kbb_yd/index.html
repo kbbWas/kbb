@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+		<title>矿宝宝</title>
+		<script src="js/adaptive.js" type="text/javascript"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+			}
+			
+			img {
+				border: 0;
+			}
+			
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+				background: #FFFFFF;
+			}
+			
+			.logo_s {
+				width: 100%;
+				height: 6rem;
+				padding-top: 2.6rem;
+			}
+			
+			.logo_s img {
+				display: block;
+				width: 4.88rem;
+				height: 3.01rem;
+				margin: 0 auto;
+			}
+			
+			.text_shiyong {
+				width: 100%;
+				margin: 0 auto;
+				height: 2.8rem;
+				position: fixed;
+				bottom: 2.6rem;
+			}
+			
+			.ckisd {
+				width: 80%;
+				height: 0.8rem;
+				border-radius: 0.5rem;
+				background: #0058a9;
+				margin: 0 auto;
+				margin-top: 0.5rem;
+			}
+			
+			.ckisd img {
+				display: inline-block;
+				width: 0.44rem;
+				height: 0.44rem;
+				margin-left: 2.3rem;
+				margin-bottom: -0.12rem;
+			}
+			
+			.ckisd button {
+				outline: none;
+				border: none;
+				border: 0;
+				font-size: 0.26rem;
+				line-height: 0.8rem;
+				text-align: center;
+				color: #FFFFFF;
+				background: #0058a9;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="logo_s">
+			<img src="img/kbb.png" alt="" />
+		</div>
+		<div class="text_shiyong">
+			<div class="ckisd" id="going_dowm">
+				<img src="img/app.png" alt="" />
+				<button>下载APP</button>
+			</div>
+			<div class="ckisd" id="pc_jojo">
+				<img src="img/diannao.png" alt="" />
+				<button>电脑版</button>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//设置当前页面设计稿的宽度
+			if(/HUAWEI/.test(navigator.userAgent) == true) {
+				window['adaptive'].desinWidth = 820;
+			} else if(/HONOR/.test(navigator.userAgent) == true) {
+				window['adaptive'].desinWidth = 835;
+			} else if(/LMY47I/.test(navigator.userAgent) == true) {
+				window['adaptive'].desinWidth = 760;
+			} else {
+				window['adaptive'].desinWidth = 750;
+			}
+			window['adaptive'].baseFont = 16;
+			window['adaptive'].maxWidth = 480;
+			window['adaptive'].init();
+		</script>
+		<script type="text/javascript">
+			/*  
+			 * 智能机浏览器版本信息:  
+			 *  
+			 */
+			var obtn = document.getElementById('going_dowm');
+			var pc_btn = document.getElementById('pc_jojo');
+		
+			//点击移动端
+			obtn.onclick=function(){
+				goDownload();
+			}
+			//pc端
+			pc_btn.onclick=function(){
+				window.location.href = 'http://123.207.94.132/kbb/kbb_pc'; // 公司主页
+
+			}
+
+			// 去下载
+			function goDownload() {
+				var u = navigator.userAgent,
+					app = navigator.appVersion;
+				var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1;
+				var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+				// 这里是安卓浏览器
+				if(isAndroid) {
+					window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.kuangbaobao.kbbapp'; // 跳安卓端下载地址
+				}
+				// 这里是iOS浏览器
+				if(isIOS) {
+					window.location.href = 'https://itunes.apple.com/us/app/id1127640146'; // 跳AppStore下载地址
+				}
+
+				// 是微信内部webView
+				if(is_weixn()) {
+					alert("请点击右上角按钮, 点击使用浏览器打开");
+				}
+			}
+
+			// 是微信浏览器
+			function is_weixn() {
+				var ua = navigator.userAgent.toLowerCase();
+				if(ua.match(/MicroMessenger/i) == "micromessenger") {
+					return true;
+				} else {
+					return false;
+				}
+			}
+		</script>
+	</body>
+
+</html>
