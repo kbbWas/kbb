@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>货源搜索-矿宝宝官网</title>
+	<link rel="shortcut icon" href="../bitbug_favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/jackson.css"/>
+	<link rel="stylesheet" href="../css/gm.css"/>
+	<script src="../js/swiper.min.js" type="text/javascript"></script>
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="../js/echarts.min.js"></script>
+	<script src="../js/jquery.fly.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.page.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--头部个人-->
+<div class="mall_header">
+	<div class="con_mall">
+		<div class="left_hot clear">
+			<span class="pull-left">欢迎来到矿宝宝官网</span>
+			<div class="pull-left">
+				<a href="../html/sign_in.html">请登录</a>
+				<a href="../html/register.html">免费注册</a>
+			</div>
+			<div class="pull-left">
+				<span>你好，<i class="g_blue" id="g_userTel"></i></span>
+				<a href="javascript:;" id="signOut">退出</a>
+			</div>
+		</div>
+		<div class="left_right">
+			<a class="huiyuan_zhoangixn" href="../html/personal_enter.html">会员中心</a>|
+			<a href="../html/help_use.html">帮助中心</a>|
+			<a href="../html/about_us.html">关于我们</a>|
+			<a href=tencent://message/?uin=3118481379&Site=矿宝宝在线客服&Menu=yes>在线客服</a>
+
+		</div>
+	</div>
+</div>
+<!--nav-->
+<div class="big_main sc_danhang back_color">
+	<!--loge-->
+	<div class="logo_head">
+		<div class="zuo_logo">
+			<a href="../index.html"></a>
+		</div>
+		<div class="nav_top">
+			<div class="nav_right">
+				<ul>
+					<li><a href="../index.html">首页</a></li>
+					<li><a href="../shangcheng/spot_mall.html">现货商城</a></li>
+					<li><a style="color:#0058a9;" href="../wuli/source_search.html">货源搜索</a></li>
+					<li><a href="../wuli/logistics.html">矿宝宝物流</a></li>
+					<li><a href="../wuli/supply_chain_finance.html">供应链金融</a></li>
+					<li><a href="../wuli/news_information.html">行业资讯</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="g_nav_right pull-right">
+			<img src="../img/load/kf-dl.png" alt="">
+		</div>
+	</div>
+</div>
+<!-- 货源搜索  发布求购-->
+<div class="g_goods_buy">
+	<div class="g_goods_buy_inner">
+		<div class="clear">
+			<div class="g_goods_buy_l pull-left">
+				<div class="swiper-container g_goods_banner">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="../img/wuliu/huoyuan1.jpg" alt="">
+						</div>
+						<div class="swiper-slide"><img src="../img/wuliu/huoyuan2.jpg" alt=""></div>
+					</div>
+					<div class="swiper-pagination data-swiper-parallax"></div>
+				</div>
+			</div>
+			<div class="g_goods_buy_r pull-right">
+				<button id="g_goods_btn" type="button">立即发布</button>
+			</div>
+		</div>
+		<div class="g_goods_buy_c">
+			<form action="" id="search_id">
+				<div class="g_ipt_option clear">
+					<label for="">品名
+						<input type="text" placeholder="请输入品名" name="oreClassifyName">
+					</label>
+					<label for="">产地
+						<input type="text" placeholder="请输入产地" name="areaClassifyName">
+					</label>
+					<label for="">可供吨数
+						<input type="text" placeholder="请输入吨数" name="inventory" onkeyup="value=value.replace(/[^\d]/g,'') ">
+					</label>
+					<label for="">报价
+						<input type="text" placeholder="请输入价格" name="price">
+					</label>
+				</div>
+				<div class="clear">
+					<label class="pull-left" for="">发布时间
+						<input class="g_iptTime" style="color: #676363;" type="date" placeholder="请输入指标" name="putTime">
+					</label>
+					<button id="show_mine_goung" class="pull-right" type="button">搜索</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- 货源列表 -->
+<div class="g_spot_list g_goods_list" id="g_goods_list">
+	<table class="g_spot_list_title">
+		<td>品名</td>
+		<td>产地</td>
+		<td>可供吨数</td>
+		<td class="g_list_three">产品说明</td>
+		<td>报价/吨</td>
+		<td>供货商</td>
+		<td>发布时间</td>
+		<td>货源类型</td>
+		<td>操作</td>
+	</table>
+	<ul id="ul_back_dowm">
+		<!--<li >
+			<table>
+				<td>钢材钢材钢</td>
+				<td>嘉峪关峪关</td>
+				<td>50000吨</td>
+				<td class="g_spot_three">酒钢产HPB300，直径6.5、8、10高线； 酒钢产HRB400E，螺纹钢，12mm-40mm</td>
+				<td><span class="g_red">￥3000</span>/吨</td>
+				<td>酒泉钢铁集团</td>
+				<td>2018-03-07</td>
+				<td class="g_channel"></td>
+				<td>
+					<button class="start" type="button">选货</button>
+				</td>
+			</table>
+		</li>-->
+	</ul>
+	<!--分页-->
+	<div class="pagination">
+		<ul id="get_nav_container" class="tcdPageCode"></ul>
+	</div>
+</div>
+<!-- 底部 -->
+<div class="g_foot">
+	<div class="g_foot_top">
+		<ul class="clear">
+			<li>
+				<img src="../img/shouye/ys-1.png" alt=""><span>我要买矿</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=0&titleid=0">现货商城采购流程</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=1">货源搜索</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=2">如何发布求购需求</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=3">如何支付</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=4">提货流程</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=5">售后服务</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=6">现货商城和货源搜索的区别</a></li>
+				</ol>
+			</li>
+			<li>
+				<img src="../img/shouye/ys-2.png" alt=""><span>我要卖矿</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=1&titleid=0">供应商需求发布</a></li>
+					<li><a href="../html/help_use.html?parentid=1&titleid=1">供应商合作洽谈</a></li>
+				</ol>
+			</li>
+			<li>
+				<img src="../img/shouye/ys-3.png" alt=""><span>我要拉货</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=2&titleid=0">如何免费找货</a></li>
+					<li><a href="../html/help_use.html?parentid=2&titleid=1">矿宝宝物流APP</a></li>
+					<li><a href="../html/help_use.html?parentid=2&titleid=2">车队合作洽谈</a></li>
+				</ol>
+			</li>
+			<li>
+				<img src="../img/shouye/ys-4.png" alt=""><span>我要找车</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=3&titleid=0">如何免费找车</a></li>
+					<li><a href="../html/help_use.html?parentid=3&titleid=1">如何查看物流订单</a></li>
+				</ol>
+			</li>
+			<li>
+				<img src="../img/shouye/ys-5.png" alt=""><span>供应链金融</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=4&titleid=0">什么是运输宝</a></li>
+					<li><a href="../html/help_use.html?parentid=4&titleid=1">什么是大宗白条</a></li>
+					<li><a href="../html/help_use.html?parentid=4&titleid=2">如何申请</a></li>
+				</ol>
+			</li>
+		</ul>
+	</div>
+	<div class="g_foot_ft">
+		<dl class="clear">
+			<dt><img src="../img/shouye/logo-di.png" alt=""></dt>
+			<dd>
+				<ul class="clear">
+					<li><a href="../html/about_us.html?num=0">关于我们</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=1">公司理念</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=2">人才招聘</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=3">联系我们</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=4">建议反馈</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/help_use.html">帮助中心</a></li>
+				</ul>
+				<p>&copy;矿宝宝 kuangbaobao.com 版权所有丨京ICP备16025447号</p>
+				<p>服务热线：400-667-1052（9:00-18:00）</p>
+			</dd>
+		</dl>
+	</div>
+</div>
+<!-- 免费发布求购 -->
+<div class="g_log_bomb_box g_free_purchase" id='g_free_purchase'>
+	<div class="g_bomb_hd clear">
+		<h1 class="pull-left">免费发布求购</h1>
+		<a class="pull-right g_close" href="javascript:;"></a>
+	</div>
+	<div class="g_bomb_ct">
+		<form action="" id="free_push">
+			<ul class="clear">
+				<!--隐藏的input 为了传用户的电话号-->
+				<input type="hidden" name="telephone" class="tels_ojoj" value=""/>
+				<li>
+					<label class="pull-left" for="g_mineral">矿种</label>
+					<input class="pull-left" type="text" id="g_mineral" placeholder="输入矿种" name="productName">
+				</li>
+				<li>
+					<label class='pull-left' for="g_region">区域</label>
+					<input class='pull-left' type="text" id="g_region" placeholder="输入区域" name="address">
+				</li>
+				<li>
+					<label class='pull-left' for="g_tonnage">吨数</label>
+					<input class='pull-left' type="text" id="g_tonnage" placeholder="输入吨数" name="tons">
+				</li>
+				<li>
+					<label class="pull-left">备注</label>
+					<textarea class="pull-left" placeholder="输入其他说明..." id="" cols="30" rows="10"
+								 name="requireDescribe"></textarea>
+				</li>
+			</ul>
+			<div class="g_log_submit">
+				<button class="active" id="tijiao_btn" type="button">提交</button>
+				<button class="g_close" type="button">关闭</button>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- 弹幕 -->
+<div class="g_barrage" id="g_barrage"></div>
+<div class="g_search_barrage" id="g_search_barrage">
+	<div class="g_barrage_inner clear">
+		<div class="g_barrage_l pull-left">
+			<img src="../img/wuliu/zh-bt.png" alt="">
+		</div>
+		<div class="g_barrage_r pull-right">
+			<div><a href="javascript:;" id="g_close" class="fr-ass-close" title="关闭"></a></div>
+			<form action=" ">
+				<!--隐藏的input 为了传用户的电话号-->
+				<input type="hidden" name="telephone" class="tels_ojoj" value=""/>
+				<label for="">矿种
+					<input type="text" placeholder="请输入矿种" name="productName">
+				</label>
+				<label for="">区域
+					<input type="text" placeholder="请输入区域" name="address">
+				</label>
+				<label for="">吨数
+					<input type="text" placeholder="请输入吨数" name="tons">
+				</label>
+				<label for="">备注
+					<input type="text" placeholder="请输入其他说明..." name="requireDescribe">
+				</label>
+				<button id="going_going" type="button">立即发布</button>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="g_bomb_mask"></div>
+</body>
+<script src="../js/kbb.js" type="text/javascript"></script>
+<script src="../js/gm.js" type="text/javascript"></script>
+<script src="../js/source_search.js" type="text/javascript"></script>
+</html>

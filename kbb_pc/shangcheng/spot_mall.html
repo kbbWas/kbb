@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>现货商城-矿宝宝官网</title>
+	<link rel="shortcut icon" href="../bitbug_favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/jackson.css"/>
+	<link rel="stylesheet" href="../css/gm.css"/>
+	<script src="../js/swiper.min.js" type="text/javascript"></script>
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="../js/echarts.min.js"></script>
+	<script src="../js/jquery.nicescroll.js" type="text/javascript"></script>
+	<script src="../js/jquery.fly.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.page.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--头部个人-->
+<div class="mall_header">
+	<div class="con_mall">
+		<div class="left_hot clear">
+			<span class="pull-left">欢迎来到矿宝宝官网</span>
+			<div class="pull-left">
+				<a href="../html/sign_in.html">请登录</a>
+				<a href="../html/register.html">免费注册</a>
+			</div>
+			<div class="pull-left">
+				<span>你好，<i class="g_blue" id="g_userTel"></i></span>
+				<a href="javascript:;" id="signOut">退出</a>
+			</div>
+		</div>
+		<div class="left_right">
+			<a class="huiyuan_zhoangixn" href="../html/personal_enter.html">会员中心</a>|
+			<a href="../html/help_use.html">帮助中心</a>|
+			<a href="../html/about_us.html">关于我们</a>|
+			<a href=tencent://message/?uin=3118481379&Site=矿宝宝在线客服&Menu=yes>在线客服</a>
+		</div>
+	</div>
+</div>
+<!--中间大块-->
+<div class="big_main sc_danhang back_color">
+	<!--loge-->
+	<div class="logo_head">
+		<div class="zuo_logo">
+			<a href="../index.html"></a>
+		</div>
+		<div class="nav_top">
+			<div class="nav_right">
+				<ul>
+					<li><a href="../index.html">首页</a></li>
+					<li><a style="color:#0058a9;" href="spot_mall.html">现货商城</a></li>
+					<li><a href="source_search.html">货源搜索</a></li>
+					<li><a href="../wuli/logistics.html">矿宝宝物流</a></li>
+					<li><a href="../wuli/supply_chain_finance.html">供应链金融</a></li>
+					<li><a href="../wuli/news_information.html">行业资讯</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="g_nav_right pull-right">
+			<img src="../img/load/kf-dl.png" alt="">
+		</div>
+	</div>
+</div>
+<!--nav下边的分类-->
+<div class="sc_fenlei">
+	<div class="sc_kuaangzhoang" id="g_nav"></div>
+</div>
+<!-- 现货列表 -->
+<div class="g_spot_list" id="g_spot_list">
+	<div id="g_find_list"></div>
+	<!--分页-->
+	<div class="pagination">
+		<ul id="get_nav_container" class="tcdPageCode"></ul>
+	</div>
+</div>
+<!-- 底部 -->
+<div class="g_foot">
+	<div class="g_foot_top">
+		<ul class="clear">
+			<li>
+				<img src="../img/shouye/ys-1.png" alt=""><span>我要买矿</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=0&titleid=0">现货商城采购流程</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=1">货源搜索</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=2">如何发布求购需求</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=3">如何支付</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=4">提货流程</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=5">售后服务</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=6">现货商城和货源搜索的区别</a></li>
+				</ol>
+			</li>
+			<li>
+				<img src="../img/shouye/ys-2.png" alt=""><span>我要卖矿</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=1&titleid=0">供应商需求发布</a></li>
+					<li><a href="../html/help_use.html?parentid=1&titleid=1">供应商合作洽谈</a></li>
+				</ol>
+			</li>
+			<li>
+				<img src="../img/shouye/ys-3.png" alt=""><span>我要拉货</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=2&titleid=0">如何免费找货</a></li>
+					<li><a href="../html/help_use.html?parentid=2&titleid=1">矿宝宝物流APP</a></li>
+					<li><a href="../html/help_use.html?parentid=2&titleid=2">车队合作洽谈</a></li>
+				</ol>
+			</li>
+			<li>
+				<img src="../img/shouye/ys-4.png" alt=""><span>我要找车</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=3&titleid=0">如何免费找车</a></li>
+					<li><a href="../html/help_use.html?parentid=3&titleid=1">如何查看物流订单</a></li>
+				</ol>
+			</li>
+			<li>
+				<img src="../img/shouye/ys-5.png" alt=""><span>供应链金融</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=4&titleid=0">什么是运输宝</a></li>
+					<li><a href="../html/help_use.html?parentid=4&titleid=1">什么是大宗白条</a></li>
+					<li><a href="../html/help_use.html?parentid=4&titleid=2">如何申请</a></li>
+				</ol>
+			</li>
+		</ul>
+	</div>
+	<div class="g_foot_ft">
+		<dl class="clear">
+			<dt><img src="../img/shouye/logo-di.png" alt=""></dt>
+			<dd>
+				<ul class="clear">
+					<li><a href="../html/about_us.html?num=0">关于我们</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=1">公司理念</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=2">人才招聘</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=3">联系我们</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=4">建议反馈</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/help_use.html">帮助中心</a></li>
+				</ul>
+				<p>&copy;矿宝宝 kuangbaobao.com 版权所有丨京ICP备16025447号</p>
+				<p>服务热线：400-667-1052（9:00-18:00）</p>
+			</dd>
+		</dl>
+	</div>
+</div>
+<!-- 购物车 -->
+<div class="g_shopping_cart clear">
+	<div class="g_cart_inner pull-left">
+		<!-- 侧边导航 -->
+		<div class="g_cart_nav">
+			<div class="g_cart" id="clickCart">
+				<i class="iconfont icon-xiazai1 g_icon_cart" id="end"></i>
+				<span>购<br>物<br>车</span>
+				<b class="g_white" id="g_length">0</b>
+			</div>
+			<div class="g_service">
+				<i class="iconfont icon-kefu kufu_chulai"></i>
+				<div class="chuxiona_ba">
+					<!--链接到qq-->
+					<a href=tencent://message/?uin=3118481379&Site=矿宝宝在线客服&Menu=yes>在线客服</a>
+				</div>
+			</div>
+			<div class="g_code">
+				<i class="iconfont icon-erweima"></i>
+				<div class="wei_ma">
+					<div class="dingyue_hao">
+						<img src="../img/shouye/ewm-fw.png" alt=""/>
+						<span>矿宝宝服务号</span>
+					</div>
+					<div class="gongzuo_hao">
+						<img src="../img/shouye/ewm-dy.png" alt=""/>
+						<span>矿宝宝订阅号</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top_scroll">
+			<div class="g_feedback">
+				<i class="iconfont icon-fankuiyijian"></i>
+				<div class="fuanyu_are">
+					建议反馈
+				</div>
+			</div>
+			<div class="shangqu_js">
+				<i class="iconfont icon-fanhuidingbu3 zhiding_j"></i>
+			</div>
+		</div>
+	</div>
+	<!-- 购物车列表 -->
+	<div class="g_shop_cart pull-right" id="g_shop_cart">
+		<h3>购物车</h3>
+		<!-- 购物swiper -->
+		<div class="g_cart_swiper" id="g_cart_swiper">
+			<div id="g_cart_slide"></div>
+		</div>
+		<!-- 结算 -->
+		<div class="g_empty g_text_center"><a id="g_empty" href="javascript:;">清空购物车</a></div>
+		<div class="g_settlement clear">
+			<div class="pull-left">
+				<span><b class="g_red" id="set_num">0</b>&nbsp;件商品</span>
+				<br>
+				<span id="set_money"></span>
+			</div>
+			<div class="pull-right">
+				<button type="button" id="lockGoods">立即锁货</button>
+			</div>
+		</div>
+	</div>
+
+	<!--默认状态-->
+	<div class="g_notList g_show pull-right"></div>
+</div>
+<!--锁货弹框 -->
+<div class="g_lock_goods" id="g_lockGoods">
+	<div class="g_iconClose clear">
+		<a class="g_close pull-right" href="javascript:;"></a>
+	</div>
+	<div class="g_success_alert">
+		<i class="g_lock_icon"></i>
+		<h3>立即锁货</h3>
+		<p>您确定要购买这些商品吗？</p>
+		<button class="active">确认并锁货</button>
+		<button class="g_close">取消</button>
+	</div>
+</div>
+<div class="g_bomb_mask"></div>
+<script src="../js/kbb.js" type="text/javascript"></script>
+<script src="../js/gm.js" type="text/javascript"></script>
+<script src="../js/going_to.js" type="text/javascript"></script>
+<script src="../js/spot_mall.js" type="text/javascript"></script>
+</body>
+
+</html>

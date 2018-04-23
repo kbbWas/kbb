@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>我的物流-矿宝宝官网</title>
+	<link rel="shortcut icon" href="../bitbug_favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/jackson.css"/>
+	<link rel="stylesheet" href="../css/gm.css"/>
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--头部个人-->
+<div class="mall_header">
+	<div class="con_mall">
+		<div class="left_hot clear">
+			<span class="pull-left">欢迎来到矿宝宝官网</span>
+			<div class="pull-left">
+				<a href="../html/sign_in.html">请登录</a>
+				<a href="../html/register.html">免费注册</a>
+			</div>
+			<div class="pull-left">
+				<span>你好，<i class="g_blue" id="g_userTel"></i></span>
+				<a href="javascript:;" id="signOut">退出</a>
+			</div>
+		</div>
+		<div class="left_right">
+			<a class="huiyuan_zhoangixn" href="../html/personal_enter.html">会员中心</a>|
+			<a href="../html/help_use.html">帮助中心</a>|
+			<a href="../html/about_us.html">关于我们</a>|
+			<a href=tencent://message/?uin=3118481379&Site=矿宝宝在线客服&Menu=yes>在线客服</a>
+
+		</div>
+	</div>
+</div>
+<!--详情头部-->
+<div class="g_order_head">
+	<div class="g_order_inner clear">
+		<div class="g_order_l pull-left">
+			<h1 class="clear">
+				<a href="../index.html" target="_blank">
+					<img src="../img/shouye/logo-sy.png" alt="">
+				</a>
+				<span>求购意向</span>
+			</h1>
+		</div>
+		<div class="pull-right g_order_r">
+			<img src="../img/load/kf-dl.png" alt="">
+		</div>
+	</div>
+</div>
+<!-- 内容 -->
+<div class="g_intention g_w_all clear">
+	<div class="g_details_nav">
+		<a href="../index.html">首页</a>>
+		<a href="source_search.html">货源搜索</a>>
+		<a href="purchase_intention.html">求购意向</a>
+	</div>
+	<div class="g_intentionL">
+		<div class="g_intenL_top clear">
+			<span class="pull-left">发布时间：2018-03-07</span>
+			<b class="g_intenL_state"></b>
+		</div>
+		<div class="g_intenL_inner clear">
+			<div class="g_i_all">
+				<p><b>品名</b><span>二级冶金焦</span></p>
+				<p><b>产地</b><span>嘉峪关</span></p>
+				<p><b>可供吨数</b><span>10000吨</span></p>
+			</div>
+			<div class="g_i_all">
+				<p><b>报价/吨</b><span class="g_red">￥3000</span></p>
+				<p><b>供应商</b><span>酒泉钢铁集团</span></p>
+			</div>
+			<div class="g_i_last">
+				<p><b>产品说明</b><span>TFe：=61%    S：≤0.03%    P：≤0.07抗压强度（N/个球）：≥1600粒度：Ld（<6mm）≤13%    TiO2：≤0.35%</span></p>
+			</div>
+		</div>
+	</div>
+	<div class="g_intentionR">
+		<h2 class="g_blue">求购意向</h2>
+		<p>支付方式：买卖双方协商</p>
+		<p>交易方式：买卖双方协商</p>
+		<p>
+			<span>预购吨数</span>
+			<input type="text" placeholder="输入吨数">
+		</p>
+		<p id="g_intention_btn">
+			<button>提交求购意向</button>
+		</p>
+	</div>
+</div>
+<!-- 底部 -->
+<div class="g_foot">
+	<div class="g_foot_top">
+		<ul class="clear">
+			<li><img src="../img/shouye/ys-1.png" alt=""><span>我要买矿</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=0&titleid=0">现货商城采购流程</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=1">货源搜索</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=2">如何发布求购需求</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=3">如何支付</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=4">提货流程</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=5">售后服务</a></li>
+					<li><a href="../html/help_use.html?parentid=0&titleid=6">现货商城和货源搜索的区别</a></li>
+				</ol>
+			</li>
+			<li><img src="../img/shouye/ys-2.png" alt=""><span>我要卖矿</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=1&titleid=0">供应商需求发布</a></li>
+					<li><a href="../html/help_use.html?parentid=1&titleid=1">供应商合作洽谈</a></li>
+				</ol>
+			</li>
+			<li><img src="../img/shouye/ys-3.png" alt=""><span>我要拉货</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=2&titleid=0">如何免费找货</a></li>
+					<li><a href="../html/help_use.html?parentid=2&titleid=1">矿宝宝物流APP</a></li>
+					<li><a href="../html/help_use.html?parentid=2&titleid=2">车队合作洽谈</a></li>
+				</ol>
+			</li>
+			<li><img src="../img/shouye/ys-4.png" alt=""><span>我要找车</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=3&titleid=0">如何免费找车</a></li>
+					<li><a href="../html/help_use.html?parentid=3&titleid=1">如何查看物流订单</a></li>
+				</ol>
+			</li>
+			<li><img src="../img/shouye/ys-5.png" alt=""><span>供应链金融</span>
+				<ol>
+					<li><a href="../html/help_use.html?parentid=4&titleid=0">什么是运输宝</a></li>
+					<li><a href="../html/help_use.html?parentid=4&titleid=1">什么是大宗白条</a></li>
+					<li><a href="../html/help_use.html?parentid=4&titleid=2">如何申请</a></li>
+				</ol>
+			</li>
+		</ul>
+	</div>
+	<div class="g_foot_ft">
+		<dl class="clear">
+			<dt><img src="../img/shouye/logo-di.png" alt=""></dt>
+			<dd>
+				<ul class="clear">
+					<li><a href="../html/about_us.html?num=0">关于我们</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=1">公司理念</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=2">人才招聘</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=3">联系我们</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/about_us.html?num=4">建议反馈</a>&nbsp;/&nbsp;</li>
+					<li><a href="../html/help_use.html">帮助中心</a></li>
+				</ul>
+				<p>&copy;矿宝宝 kuangbaobao.com 版权所有丨京ICP备16025447号</p>
+				<p>服务热线：400-667-1052（9:00-18:00）</p>
+			</dd>
+		</dl>
+	</div>
+</div>
+</body>
+<!-- 选货弹框 -->
+<div class="g_lock_goods g_selected_goods" id="g_selected_goods">
+	<div class="g_iconClose clear">
+		<a class="g_close pull-right" href="javascript:;"></a>
+	</div>
+	<div class="g_success_alert">
+		<i class="g_lock_icon"></i>
+		<h3>选货成功</h3>
+		<p>稍后会有矿宝宝客服为您致电服务</p>
+		<button class="active">继续选购</button>
+		<a href="../html/my_order.html">
+			<button>查看订单</button>
+		</a>
+	</div>
+</div>
+<div class="g_bomb_mask"></div>
+
+<script src="../js/kbb.js" type="text/javascript"></script>
+<script src="../js/gm.js" type="text/javascript"></script>
+</html>
