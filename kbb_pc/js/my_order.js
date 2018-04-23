@@ -59,8 +59,9 @@ function order_list(pageNo, status) {
 					if(data.data.list[i].quotedPrice==null){
 						hetongjia='';
 					}else{
-						hetongjia='<p class="pull-left"><span>合同价：</span><b class="g_red">￥' + data.data.list[i].quotedPrice + '</b></p>';
+						hetongjia='<p style="margin-left:60px;" class="pull-left"><span>合同价：</span><b class="g_red">￥' + data.data.list[i].quotedPrice + '</b></p>';
 					}
+
 
 
 
