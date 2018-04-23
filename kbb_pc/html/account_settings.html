@@ -72,9 +72,10 @@
 		</div>
 		<div class="m_order_r_c">
 			<div class="head_pidd">
-				<img src="../img/load/userImg.png" alt="">
-				<p>更换头像<input type="file" name="" id="" class="imgFiles g_file"
-								  accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" multiple=""></p>
+				<form id="uploadHead" enctype="multipart/form-data">
+					<img src="../img/load/userImg.png" alt="">
+					<p>更换头像<input type="file" name="srcFile" id="srcFile" class="imgFiles g_file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" multiple=""></p>
+				</form>
 			</div>
 			<!--未认证状态-->
 			<div class="m_renzheng g_show">

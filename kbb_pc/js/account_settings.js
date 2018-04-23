@@ -1,6 +1,13 @@
 $(document).ready(function ($) {
-	//判断登陆
-	seesionLoad();
+
+	if(_tel!=''&&_tel!=null){
+		//判断登陆
+		seesionLoad();
+	}else{
+		window.location='sign_in.html';
+	}
+
+
 
 
 	$("#srcFile").change(function () {
@@ -9,7 +16,7 @@ $(document).ready(function ($) {
 
 });
 
-
+//上传头像
 function uploadHead() {
 	$.ajax({
 		url: kbb + 'kbb-webs/token/upload/picture',

@@ -72,6 +72,11 @@ function seesionLoad() {
 	}
 
 }
+
+
+
+
+
 //退出登录
 $('#signOut').on('click', function () {
 	sessionStorage.clear();
