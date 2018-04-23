@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="401bdb5c-13c6-4de7-b324-bf86a75089d2" name="Default" comment="企业信息">
+    <list default="true" id="401bdb5c-13c6-4de7-b324-bf86a75089d2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kbb_pc/html/account_settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/kbb_pc/html/account_settings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kbb_pc/html/qiye_authentication_one.html" beforeDir="false" afterPath="$PROJECT_DIR$/kbb_pc/html/qiye_authentication_one.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kbb_pc/html/qiye_authentication_two.html" beforeDir="false" afterPath="$PROJECT_DIR$/kbb_pc/html/qiye_authentication_two.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kbb_pc/js/account_settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/kbb_pc/js/account_settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kbb_pc/js/gm.js" beforeDir="false" afterPath="$PROJECT_DIR$/kbb_pc/js/gm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kbb_pc/js/qiye_authentication_one.js" beforeDir="false" afterPath="$PROJECT_DIR$/kbb_pc/js/qiye_authentication_one.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kbb_pc/js/qiye_authentication_two.js" beforeDir="false" afterPath="$PROJECT_DIR$/kbb_pc/js/qiye_authentication_two.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,20 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="account_settings.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kbb_pc/html/account_settings.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="qiye_authentication_one.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kbb_pc/html/qiye_authentication_one.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="104" column="53" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
+            <state relative-caret-position="310">
+              <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#p#5;n#form#0;n#div#0;n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -44,29 +32,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="qiye_authentication_two.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kbb_pc/html/qiye_authentication_two.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="qiye_authentication_one.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kbb_pc/js/qiye_authentication_one.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="529">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account_settings.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kbb_pc/js/account_settings.js">
+      <file leaf-file-name="account_settings.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kbb_pc/html/account_settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gm.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kbb_pc/js/gm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="211">
+              <caret line="40" selection-start-line="40" selection-end-line="55" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -85,6 +73,7 @@
       <find>g_free_purchase</find>
       <find>g_wl_list_i</find>
       <find>g_wl_wz</find>
+      <find>g_dizhi</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -103,13 +92,13 @@
         <option value="$PROJECT_DIR$/kbb_pc/html/my_wuliu_detail.html" />
         <option value="$PROJECT_DIR$/kbb_pc/js/my_wuliu_detail.js" />
         <option value="$PROJECT_DIR$/kbb_pc/js/my_order.js" />
-        <option value="$PROJECT_DIR$/kbb_pc/html/account_settings.html" />
-        <option value="$PROJECT_DIR$/kbb_pc/html/qiye_authentication_two.html" />
         <option value="$PROJECT_DIR$/kbb_pc/js/qiye_authentication_two.js" />
         <option value="$PROJECT_DIR$/kbb_pc/js/gm.js" />
         <option value="$PROJECT_DIR$/kbb_pc/js/account_settings.js" />
         <option value="$PROJECT_DIR$/kbb_pc/js/qiye_authentication_one.js" />
+        <option value="$PROJECT_DIR$/kbb_pc/html/account_settings.html" />
         <option value="$PROJECT_DIR$/kbb_pc/html/qiye_authentication_one.html" />
+        <option value="$PROJECT_DIR$/kbb_pc/html/qiye_authentication_two.html" />
       </list>
     </option>
   </component>
@@ -120,8 +109,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="925" />
-    <option name="y" value="145" />
+    <option name="x" value="910" />
+    <option name="y" value="123" />
     <option name="width" value="1017" />
     <option name="height" value="866" />
   </component>
@@ -157,6 +146,12 @@
               <item name="kbb" type="462c0819:PsiDirectoryNode" />
               <item name="kbb_pc" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kbb" type="462c0819:PsiDirectoryNode" />
+              <item name="kbb_pc" type="462c0819:PsiDirectoryNode" />
+              <item name="wuli" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -207,11 +202,25 @@
       <option name="project" value="LOCAL" />
       <updated>1524464520564</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="企业信息">
+      <created>1524465708274</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524465708274</updated>
+    </task>
+    <task id="LOCAL-00003" summary="企业信息">
+      <created>1524467303712</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524467303712</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17266000" />
+    <option name="totallyTimeSpent" value="20395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -222,6 +231,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32972974" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -242,7 +252,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="0" side_tool="true" />
     </layout>
@@ -375,7 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kbb_pc/wuli/open_white.html" />
     <entry file="file://$PROJECT_DIR$/kbb_pc/index.html" />
     <entry file="file://$PROJECT_DIR$/kbb_pc/js/spot_mall.js" />
     <entry file="file://$PROJECT_DIR$/kbb_pc/css/gm.css">
@@ -423,17 +431,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kbb_pc/html/qiye_authentication_two.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kbb_pc/js/my_wuliu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="32" column="6" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="32" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kbb_pc/js/qiye_authentication_two.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kbb_pc/html/about_us.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kbb_pc/js/gm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kbb_pc/wuli/open_white.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="218" column="5" lean-forward="true" selection-start-line="214" selection-start-column="3" selection-end-line="218" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -444,41 +465,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kbb_pc/js/qiye_authentication_two.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kbb_pc/js/gm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kbb_pc/js/account_settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="506">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kbb_pc/wuli/information_details.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/kbb_pc/js/qiye_authentication_one.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="529">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kbb_pc/html/account_settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+        <state relative-caret-position="211">
+          <caret line="40" selection-start-line="40" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kbb_pc/html/qiye_authentication_two.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kbb_pc/html/qiye_authentication_one.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="104" column="53" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
+        <state relative-caret-position="310">
+          <caret line="43" column="33" lean-forward="true" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#input#0;n#p#5;n#form#0;n#div#0;n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

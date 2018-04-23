@@ -45,11 +45,10 @@
 		<div class="g_adout_l pull-left clear">
 			<h1 class="pull-left"><a href="../index.html"></a></h1>
 			<ul class="pull-left buyans_yang">
-				<li class="pull-left">
-					<a href="personal_enter.html">会员首页</a>
+				<li class="pull-left"><a href="personal_enter.html">会员首页</a>
 				</li>
-				<li class="pull-left">
-					<a href="account_settings.html">账户设置</a>
+				<li class="pull-left"><a style="color: #FFFFFF;" href="account_settings.html">账户设置</a>
+					<img class="zhanghu_sezhi" src="../img/load/tb-dhxz.png" alt="" />
 				</li>
 			</ul>
 		</div>
@@ -79,7 +78,7 @@
 		</div>
 		<div class="m_order_r_c">
 			<div class="g_white_form g_qiyeForm" id="g_qiyeForm">
-				<form action="" id="enterpriseForm">
+				<form action="" id="enterpriseForm" enctype="multipart/form-data">
 					<p>
 						<label for="g_name"><b>*</b><span>公司名称</span></label>
 						<input type="text" id="g_name" placeholder="请输入公司名称" name="oreShipperName">
@@ -93,16 +92,16 @@
 						<input type="text" id="g_dizhi" placeholder="请输入公司经营地址" name="manageAddress">
 					</p>
 					<p>
-						<label for="g_tel"><b>*</b><span>公司固话</span></label>
-						<input type="text" id="g_tel" placeholder="请输入公司固话" name="putTelephone">
+						<label for="g_Telephone"><b>*</b><span>公司固话</span></label>
+						<input type="text" onkeyup="value=value.replace(/[^\d]/g,'') " id="g_Telephone" placeholder="请输入公司固话" name="putTelephone">
 					</p>
 					<p>
-						<label for="g_tel"><b>*</b><span>联&nbsp;&nbsp;系&nbsp;人</span></label>
+						<label for="get_mamse"><b>*</b><span>联&nbsp;&nbsp;系&nbsp;人</span></label>
 						<input type="text" id="get_mamse" placeholder="请输入联系人真实姓名" name="oreShipperLinkman">
 					</p>
 					<p>
 						<label for="g_tel"><b>*</b><span>联系方式</span></label>
-						<input type="text" disabled value="" style="border: none" name="oreShipperTelephone">
+						<input id="g_tel" type="text" disabled value="" style="border: none" name="oreShipperTelephone"/>
 					</p>
 					<p class="g_license">
 						<label class="pull-left"><b>*</b><span>营业执照<br>(三证合一)</span></label>
@@ -127,7 +126,7 @@
 							<a href="../img/wuliu/pt-1.png" download="kbb企业认证授权书">《企业认证授权书》模板</a>
 						</label>
 						<a href="javascript:;" class="file pull-left">选择文件
-							<input type="file" name="enterpriseAuthentication" class="imgFiles g_file"
+							<input type="file" id="warrant" name="enterpriseAuthentication" class="imgFiles g_file"
 									 accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" multiple="">
 						</a>
 						<i class="pull-left">未上传</i>
