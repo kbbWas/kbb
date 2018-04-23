@@ -3203,8 +3203,17 @@ table{
 	border-radius: 15px;
 	color: #FFFFFF;
 	font-size: 12px;
+	position: relative;
+	overflow: hidden;
 }
+.g_qiye_two button img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
 
+}
 /**/
 .g_white_form input:focus{
 	border: 1px solid #0058a9;

@@ -7,6 +7,12 @@ $(function () {
 
 	wayBill(1, 1, carriageId, $('.g_wl_list_i').eq(0).children('.m_list_center'));
 
+	//图片放大
+	var viewer = new Viewer(document.getElementById('g_wl_list'), {
+		url: 'data-original'
+	});
+
+
 	//物流接口
 	function logisticsFunc(tel, carriageId) {
 		$.ajax({
@@ -138,11 +144,6 @@ $(function () {
 			})
 		});
 	}
-
-
-	var viewer = new Viewer(document.getElementById('g_wl_list'), {
-		url: 'data-original'
-	});
 
 	function gpsFunc() {
 		//创建地图

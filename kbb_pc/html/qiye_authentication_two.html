@@ -10,8 +10,10 @@
 		<link rel="shortcut icon" href="../bitbug_favicon.ico">
 		<link rel="stylesheet" type="text/css" href="../css/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="../css/jackson.css" />
+		<link rel="stylesheet" href="../css/viewer.min.css">
 		<link rel="stylesheet" href="../css/gm.css" />
 		<script src="../js/swiper.min.js" type="text/javascript"></script>
+		<script src="../js/viewer.min.js"></script>
 		<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
 	</head>
 
@@ -76,44 +78,44 @@
 					</div>
 				</div>
 				<div class="m_order_r_c">
-					<div class="g_qiye_two">
+					<div class="g_qiye_two" id="g_qiye_two">
 						<ul>
 							<li>
 								<b>公司名称</b>
-								<span>北京矿宝宝网络科技有限公司</span>
+								<span id="qiyeName"></span>
 							</li>
 							<li>
 								<b>注册地址</b>
-								<span>甘肃省酒泉市肃州区莫高路2号南4号门店</span>
+								<span id="qiyeAddress"></span>
 							</li>
 							<li>
 								<b>经营地址</b>
-								<span>甘肃省酒泉市肃州区莫高路2号南4号门店</span>
+								<span id="qiyeManage"></span>
 							</li>
 							<li>
 								<b>公司固话</b>
-								<span>0937-2829619</span>
+								<span id="qiyeTel"></span>
 							</li>
 							<li>
 								<b>联&nbsp;&nbsp;系&nbsp;人</b>
-								<span>狂宝宝</span>
+								<span id="peopleName"></span>
 							</li>
 							<li>
 								<b>联系方式</b>
-								<span>13835197059</span>
+								<span id="peopleTel"></span>
 							</li>
 							<li class="g_lineHeight">
 								<b>营业执照 <br>
 							<i>(三证合一)</i></b>
-								<button>查看</button>
+								<button>查看<img id="License" data-original='' src="" alt=""></button>
 							</li>
 							<li>
 								<b>开户许可证</b>
-								<button>查看</button>
+								<button>查看<img id="Opening" data-original='' src="" alt=""></button>
 							</li>
 							<li>
 								<b>企业认证授权书</b>
-								<button>查看</button>
+								<button>查看<img id="Authentication" data-original='' src="" alt=""></button>
 							</li>
 						</ul>
 					</div>
