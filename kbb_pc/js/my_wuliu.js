@@ -74,6 +74,7 @@ function logisticsList(data, parent, pageNo, tel, _status) {
 //我的物流
 $(".g_wl_tab li").click(function () {
 	$(this).addClass('active').siblings().removeClass('active');
+	$('.g_wl_list_i').eq($(this).index()).addClass('g_show').siblings().removeClass('g_show');
 
 	switch ($(this).index()) {
 		case 0:
@@ -82,6 +83,7 @@ $(".g_wl_tab li").click(function () {
 		default:
 			logisticsFunc(1, _tel, 0, $('.m_order_list').eq(1));
 	}
+
 });
 //物流详情
 $(".g_wl_order").on('click', 'button', function () {

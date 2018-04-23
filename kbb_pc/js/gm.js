@@ -72,11 +72,6 @@ function seesionLoad() {
 	}
 
 }
-
-
-
-
-
 //退出登录
 $('#signOut').on('click', function () {
 	sessionStorage.clear();
@@ -146,23 +141,6 @@ $('#g_goods_list button').on('click', function () {
 
 // 
 
-
-
-//订单详情
-function func(num) {
-	if (num == 1) {
-		$('.g_state li').eq(0).addClass('active');
-	} else if (num == 2) {
-		$('.g_state li').eq(4).prevAll().addClass('active').find('button').hide();
-	} else if (num == 3) {
-		$('.g_state li').eq(5).addClass('active').prevAll().addClass('active').find('b').addClass('active').end().find('button').hide();
-	} else {
-		$('.g_state li').eq(6).addClass('active').siblings().addClass('active').find('b').addClass('active').end().find('button').hide();
-		console.log($('.g_state li').eq(6))
-	}
-}
-
-
 // 填写提货函显示
 $(".g_write_btn").on('click', function () {
 	setTimeout(function () {
@@ -171,28 +149,6 @@ $(".g_write_btn").on('click', function () {
 	}, 300)
 });
 
-
-//提货函事件
-$('.g_fill_global label').on('click', function () {
-	$(this).children('i').addClass('active').parent().siblings('label').children('i').removeClass('active');
-})
-$('.g_fill_global').eq(0).on('click', 'label', function () {
-	if ($(this).index() == 1) {
-		$('.g_fill_list').eq(0).addClass('g_show').siblings('.g_fill_list').removeClass('g_show');
-	} else {
-		$('.g_fill_list').eq(1).addClass('g_show').siblings('.g_fill_list').removeClass('g_show');
-	}
-}).siblings('.g_fill_list').on('click', '.g_fill_global label', function () {
-	if ($(this).index() == 1) {
-		$('.g_in_batches').removeClass('g_show').siblings('.g_in_voucher').css({
-			'padding-top': '40px'
-		});
-	} else {
-		$('.g_in_batches').addClass('g_show').siblings('.g_in_voucher').css({
-			'padding-top': '10px'
-		});
-	}
-});
 
 
 //我的订单

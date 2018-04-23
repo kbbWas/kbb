@@ -1,4 +1,4 @@
-// var kbb = 'http://192.168.1.104:8080/';
+//var kbb = 'http://192.168.1.104:8080/';
 
 //
 var _colorId = $.getUrlParam('colorId');
